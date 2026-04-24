@@ -92,8 +92,8 @@
 
                 <div class="text-xs text-gray-400 tracking-wider">
                   <p>Website</p>
-                  <a href="https://www.patricia-portfolio.com" class="text-white hover:text-accent transition-colors break-all">
-                    www.patricia-portfolio.com
+                  <a href="https://patricia-portfolio-website.web.app/" class="text-white hover:text-accent transition-colors break-all">
+                    https://patricia-portfolio-website.web.app/
                   </a>
                 </div>
               </div>

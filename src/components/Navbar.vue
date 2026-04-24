@@ -94,7 +94,7 @@
                                                     Video CV
                                                 </a>
                                             </li>
-                                            <li><a :href="resumePdf" download="CV-Patricia-Puienaru-Gundelfingen.pdf"
+                                            <li><a :href="resumePdf" download="CV-PDF-Patricia-Puienaru-Gundelfingen.pdf"
                                                     class="flex items-center px-4 py-3 text-sm text-gray-300 transition-colors hover:bg-accent hover:text-white">
                                                     CV PDF (Download)
                                                 </a>
@@ -130,7 +130,7 @@
                             Video CV
                         </a>
 
-                        <a :href="resumePdf" download="CV-Patricia-Puienaru-Gundelfingen.pdf"
+                        <a :href="resumePdf" download="CV-PDF-Patricia-Puienaru-Gundelfingen.pdf"
                             class="w-full rounded-xl border border-accent px-4 py-3 font-medium text-white transition-all duration-300 hover:bg-accent hover:shadow-[0_0_15px_rgba(255,0,245,0.35)]"
                             @click="closeResumePopup">
                             CV PDF
@@ -160,7 +160,7 @@ const isDropdownOpen = ref(false);
 const isResumePopupOpen = ref(false);
 const dropdownRef = ref(null);
 
-const resumePdf = '/navbar-resume/CV Patricia Puienaru Gundelfingen.pdf';
+const resumePdf = '/navbar-resume/CV PDF Patricia Puienaru Gundelfingen.pdf';
 
 const toggleMobileMenu = () => {
     isOpen.value = !isOpen.value;

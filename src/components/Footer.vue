@@ -60,7 +60,7 @@
 
             <!-- Website -->
             <a
-              href="https://www.patricia-portfolio.com"
+              href="https://patricia-portfolio-website.web.app/"
               class="flex items-center justify-center text-gray-400 hover:text-accent transition-all duration-300"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 24 24">
