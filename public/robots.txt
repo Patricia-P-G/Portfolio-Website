@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://patricia-portfolio-website.web.app/sitemap.xml
