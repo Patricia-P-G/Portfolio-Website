@@ -11,10 +11,7 @@ const { groupedSkills } = useSkills();
 const skillsRef = ref(null);
 
 // Animation State
-const shouldAnimate = ref(
-  typeof window !== 'undefined' &&
-  !window.matchMedia('(prefers-reduced-motion: reduce)').matches
-);
+const shouldAnimate = ref(false);
 const animationFailed = ref(false);
 
 let observer = null;
@@ -46,6 +43,7 @@ const handleAnimationError = (error) => {
 
   console.error('Skills animation failed:', error);
   animationFailed.value = true;
+  shouldAnimate.value = false;
   cleanupAnimations();
 };
 
@@ -79,19 +77,34 @@ const animateGroup = async (group) => {
 
 // Initialize Animations
 onMounted(() => {
-  if (!skillsRef.value || !shouldAnimate.value) return;
+  const root = skillsRef.value;
+
+  if (
+    !root ||
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  ) return;
 
   try {
-    const root = skillsRef.value;
     const headerItems = root.querySelectorAll('.skills-item');
     const groups = root.querySelectorAll('.skills-group');
     const firstGroup = groups[0];
 
     if (!firstGroup || !headerItems.length) return;
 
-    // Main Title, Subtitle and Frontend
+    const firstTitle = firstGroup.querySelector('.skills-title');
+    const firstCards = firstGroup.querySelectorAll('.skill-card-animate');
+
+    if (!firstTitle || !firstCards.length) return;
+
+    // Prepare Elements Before Animating
+    shouldAnimate.value = true;
+
+    // Main Title, Subtitle and First Category
     const timeline = createTimeline({
-      defaults: { duration: 900, ease: 'outCubic' }
+      defaults: {
+        duration: 900,
+        ease: 'outCubic'
+      }
     });
 
     timeline
@@ -102,13 +115,13 @@ onMounted(() => {
         duration: 850,
         ease: 'outCubic'
       })
-      .add(firstGroup.querySelector('.skills-title'), {
+      .add(firstTitle, {
         opacity: [0, 1],
         translateY: [24, 0],
         duration: 650,
         ease: 'outCubic'
       }, '-=730')
-      .add(firstGroup.querySelectorAll('.skill-card-animate'), cardAnimation(), '-=450');
+      .add(firstCards, cardAnimation(), '-=450');
 
     animations.push(timeline);
 
@@ -125,17 +138,24 @@ onMounted(() => {
       return;
     }
 
-    observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting || isUnmounted || animationFailed.value) return;
+    observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (
+            !entry.isIntersecting ||
+            isUnmounted ||
+            animationFailed.value
+          ) return;
 
-        observer.unobserve(entry.target);
-        void animateGroup(entry.target);
-      });
-    }, {
-      threshold: 0.05,
-      rootMargin: '0px 0px -10% 0px'
-    });
+          observer?.unobserve(entry.target);
+          void animateGroup(entry.target);
+        });
+      },
+      {
+        threshold: 0.05,
+        rootMargin: '0px 0px -10% 0px'
+      }
+    );
 
     groups.forEach((group, index) => {
       if (index > 0) observer.observe(group);
@@ -151,9 +171,12 @@ onBeforeUnmount(() => {
   cleanupAnimations();
 });
 
-useHead({
-  title: 'Technical Skills | Patricia - Frontend Developer',
+// SEO
+const pageTitle = 'Technical Skills | Patricia - Frontend Developer';
+const pageUrl = 'https://patricia-portfolio-website.web.app/skills';
 
+useHead({
+  title: pageTitle,
   meta: [
     {
       name: 'description',
@@ -165,7 +188,7 @@ useHead({
     },
     {
       property: 'og:title',
-      content: 'Technical Skills | Patricia - Frontend Developer'
+      content: pageTitle
     },
     {
       property: 'og:description',
@@ -173,22 +196,20 @@ useHead({
     },
     {
       property: 'og:url',
-      content: 'https://patricia-portfolio-website.web.app/skills'
+      content: pageUrl
     },
     {
       property: 'og:site_name',
       content: 'Patricia Portfolio'
     }
   ],
-
   link: [
     {
       rel: 'canonical',
-      href: 'https://patricia-portfolio-website.web.app/skills'
+      href: pageUrl
     }
   ]
-})
-
+});
 </script>
 
 <template>
@@ -217,7 +238,6 @@ useHead({
         <!-- Skill Categories -->
         <section v-for="category in groupedSkills" :key="category.id" class="skills-group mb-10"
           :aria-labelledby="`skills-${category.id}`">
-          
           <h2 :id="`skills-${category.id}`" class="skills-title mb-6 text-2xl font-semibold text-white">
             {{ category.title }}
           </h2>
@@ -235,17 +255,21 @@ useHead({
 
 <style scoped>
 @media (prefers-reduced-motion: no-preference) {
-  .skills-ready:not(.skills-animation-failed) .skills-item,
-  .skills-ready:not(.skills-animation-failed) .skills-title,
-  .skills-ready:not(.skills-animation-failed) .skill-card-animate {
+  .skills-ready:not(.skills-animation-failed) :is(
+    .skills-item,
+    .skills-title,
+    .skill-card-animate
+  ) {
     opacity: 0;
   }
 }
 
 /* Restore Content if Animation Fails */
-.skills-animation-failed .skills-item,
-.skills-animation-failed .skills-title,
-.skills-animation-failed .skill-card-animate {
+.skills-animation-failed :is(
+  .skills-item,
+  .skills-title,
+  .skill-card-animate
+) {
   opacity: 1 !important;
   transform: none !important;
 }
