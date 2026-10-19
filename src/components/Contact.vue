@@ -2,7 +2,7 @@
   <section ref="sectionRef" class="py-24 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-        <!-- LEFT SIDE -->
+        <!-- Left Side -->
         <div class="left-content">
           <div class="heading-block">
             <h2 class="text-3xl md:text-4xl font-bold text-white">Let's Work</h2>
@@ -13,14 +13,14 @@
             </p>
           </div>
 
+          <!-- Contact Links -->
           <div class="flex flex-col gap-5">
-            <!-- GITHUB -->
+            <!-- GitHub -->
             <div class="contact-item space-y-6">
               <div class="flex items-center gap-4">
-                <div
-                  class="w-12 h-12 flex items-center justify-center text-gray-400 hover:text-accent transition-all duration-300">
+                <div class="w-12 h-12 flex items-center justify-center text-gray-400 hover:text-accent transition-all duration-300">
                   <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16">
+                    class="bi bi-github" viewBox="0 0 16 16" aria-hidden="true">
                     <path
                       d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
                   </svg>
@@ -36,13 +36,12 @@
               </div>
             </div>
 
-            <!-- LINKEDIN -->
+            <!-- LinkedIn -->
             <div class="contact-item space-y-6">
               <div class="flex items-center gap-4">
-                <div
-                  class="w-12 h-12 flex items-center justify-center text-gray-400 hover:text-accent transition-all duration-300">
+                <div class="w-12 h-12 flex items-center justify-center text-gray-400 hover:text-accent transition-all duration-300">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    class="bi bi-linkedin" viewBox="0 0 16 16" aria-hidden="true">
                     <path
                       d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
                   </svg>
@@ -58,33 +57,35 @@
               </div>
             </div>
 
-            <!-- EMAIL -->
+            <!-- Email -->
             <div class="contact-item space-y-6">
               <div class="flex items-center gap-4">
-                <div
-                  class="w-12 h-12 flex items-center justify-center text-gray-400 hover:text-accent transition-all duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                    class="bi bi-envelope" viewBox="0 0 16 16">
+                <div class="w-12 h-12 flex items-center justify-center text-gray-400 hover:text-accent transition-all duration-300">
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1.8em" height="2em" viewBox="0 0 24 24">
                     <path
-                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="m3.5 5.5l7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"
+                    />
                   </svg>
                 </div>
 
                 <div class="text-xs text-gray-400 tracking-wider">
                   <p>Email</p>
-                  <a href="mailto:patpui01@easv365.dk" class="text-white hover:text-accent transition-colors break-all">
-                    patpui01@easv365.dk
+                  <a href="mailto:patriciapuienaru@gmail.com" class="text-white hover:text-accent transition-colors break-all">
+                    patriciapuienaru@gmail.com
                   </a>
                 </div>
               </div>
             </div>
 
-            <!-- WEBSITE -->
+            <!-- Website -->
             <div class="contact-item space-y-6">
               <div class="flex items-center gap-4">
-                <div
-                  class="w-12 h-12 flex items-center justify-center text-gray-400 hover:text-accent transition-all duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                <div class="w-12 h-12 flex items-center justify-center text-gray-400 hover:text-accent transition-all duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"
                       d="M4.37 7.657c2.063.528 2.396 2.806 3.202 3.87c1.07 1.413 2.075 1.228 3.192 2.644c1.805 2.289 1.312 5.705 1.312 6.705M20 15h-1a4 4 0 0 0-4 4v1M8.587 3.992c0 .822.112 1.886 1.515 2.58c1.402.693 2.918.351 2.918 2.334c0 .276 0 2.008 1.972 2.008c2.026.031 2.026-1.678 2.026-2.008c0-.65.527-.9 1.177-.9H20M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0Z" />
                   </svg>
@@ -101,10 +102,10 @@
           </div>
         </div>
 
-        <!-- RIGHT SIDE -->
+        <!-- Right Side -->
         <div class="form-panel glass-panel p-8 md:p-9 rounded-3xl">
           <div class="mb-5">
-            <h3 class="text-2xl font-semibold text-white">Send a message</h3>
+            <h2 class="text-2xl font-semibold text-white">Send a message</h2>
             <p class="mt-1 text-md text-gray-400 font-light">
               Tell me about your project or idea.
             </p>
@@ -115,6 +116,7 @@
               <div class="space-y-2">
                 <label class="text-sm text-gray-400" for="user_name">Name</label>
                 <input type="text" name="user_name" id="user_name" required
+                  autocomplete="name"
                   class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all duration-300"
                   placeholder="Your full name">
               </div>
@@ -122,6 +124,7 @@
               <div class="space-y-2">
                 <label class="text-sm text-gray-400" for="user_email">Email</label>
                 <input type="email" name="user_email" id="user_email" required
+                  autocomplete="email"
                   class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-neon-purple focus:ring-1 focus:ring-neon-purple transition-all duration-300"
                   placeholder="Enter your email">
               </div>
@@ -147,27 +150,30 @@
                 {{ isSending ? 'Sending...' : 'Submit' }}
               </button>
 
-              <transition name="pop">
-                <div v-if="sendStatus !== 'idle'" :key="statusKey"
-                  class="status-box relative overflow-hidden flex items-center gap-3 px-4 py-3 rounded-xl border text-sm"
-                  :class="sendStatus === 'success'
-                    ? 'bg-green-500/10 border-green-500/30 text-green-400'
-                    : 'bg-red-500/10 border-red-500/30 text-red-400'">
-                  <div class="progress-border"></div>
+              <!-- Accessible Form Feedback -->
+              <div role="status" aria-live="polite" aria-atomic="true">
+                <transition name="pop">
+                  <div v-if="sendStatus !== 'idle'" :key="statusKey"
+                    class="status-box relative overflow-hidden flex items-center gap-3 px-4 py-3 rounded-xl border text-sm"
+                    :class="sendStatus === 'success'
+                      ? 'bg-green-500/10 border-green-500/30 text-green-400'
+                      : 'bg-red-500/10 border-red-500/30 text-red-400'">
+                    <div class="progress-border" aria-hidden="true"></div>
 
-                  <div class="status-icon">
-                    <svg v-if="sendStatus === 'success'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                      class="success-icon" aria-hidden="true">
-                      <path fill="currentColor"
-                        d="m10.6 13.8l-2.15-2.15q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7L9.9 15.9q.3.3.7.3t.7-.3l5.65-5.65q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
-                    </svg>
+                    <div class="status-icon" aria-hidden="true">
+                      <svg v-if="sendStatus === 'success'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        class="success-icon">
+                        <path fill="currentColor"
+                          d="m10.6 13.8l-2.15-2.15q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7L9.9 15.9q.3.3.7.3t.7-.3l5.65-5.65q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                      </svg>
 
-                    <div v-else class="error-icon">✕</div>
+                      <div v-else class="error-icon">✕</div>
+                    </div>
+
+                    <span>{{ statusMessage }}</span>
                   </div>
-
-                  <span>{{ statusMessage }}</span>
-                </div>
-              </transition>
+                </transition>
+              </div>
             </div>
           </form>
         </div>
@@ -184,10 +190,14 @@ import emailjs from '@emailjs/browser';
 const sectionRef = ref(null);
 const formRef = ref(null);
 
+// Animation State
 let observer = null;
 let hasAnimated = false;
-let statusTimeout = null;
+let isUnmounted = false;
+const animations = [];
 
+// Form State
+let statusTimeout = null;
 const STATUS_DURATION = 10000;
 
 const isSending = ref(false);
@@ -195,38 +205,73 @@ const sendStatus = ref('idle');
 const statusMessage = ref('');
 const statusKey = ref(0);
 
+// EmailJS Configuration
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-const runAnimation = () => {
-  if (hasAnimated) return;
-  hasAnimated = true;
+// Animation Cleanup
+const cleanupAnimations = () => {
+  observer?.disconnect();
+  observer = null;
 
-  animate('.heading-block', {
-    opacity: [0, 1],
-    y: [40, 0],
-    duration: 900,
-    ease: 'outExpo'
-  });
-
-  animate('.contact-item', {
-    opacity: [0, 1],
-    y: [35, 0],
-    duration: 900,
-    delay: stagger(120, { start: 150 }),
-    ease: 'outExpo'
-  });
-
-  animate('.form-panel', {
-    opacity: [0, 1],
-    y: [50, 0],
-    duration: 1000,
-    delay: 250,
-    ease: 'outExpo'
-  });
+  animations.forEach((animation) => animation.revert());
+  animations.length = 0;
 };
 
+// Restore Content if Animation Fails
+const handleAnimationError = (error) => {
+  if (isUnmounted) return;
+
+  console.error('Contact animation failed:', error);
+  cleanupAnimations();
+
+  sectionRef.value?.classList.add('animation-failed');
+};
+
+// Scroll Animations
+const runAnimation = () => {
+  if (hasAnimated || isUnmounted) return;
+  hasAnimated = true;
+
+  try {
+    const root = sectionRef.value;
+    if (!root) return;
+
+    animations.push(
+      animate(root.querySelector('.heading-block'), {
+        opacity: [0, 1],
+        y: [40, 0],
+        duration: 900,
+        ease: 'outExpo'
+      })
+    );
+
+    animations.push(
+      animate(root.querySelectorAll('.contact-item'), {
+        opacity: [0, 1],
+        y: [35, 0],
+        duration: 900,
+        delay: stagger(120, { start: 150 }),
+        ease: 'outExpo'
+      })
+    );
+
+    animations.push(
+      animate(root.querySelector('.form-panel'), {
+        opacity: [0, 1],
+        y: [50, 0],
+        duration: 1000,
+        delay: 250,
+        ease: 'outExpo'
+      })
+    );
+  } catch (error) {
+    handleAnimationError(error);
+  }
+};
+
+// Form Status
 const showStatus = (type, message) => {
   if (statusTimeout) clearTimeout(statusTimeout);
 
@@ -235,13 +280,17 @@ const showStatus = (type, message) => {
   statusKey.value += 1;
 
   statusTimeout = setTimeout(() => {
+    if (isUnmounted) return;
+
     sendStatus.value = 'idle';
     statusMessage.value = '';
+    statusTimeout = null;
   }, STATUS_DURATION);
 };
 
+// EmailJS Submission
 const sendEmail = async () => {
-  if (!formRef.value || isSending.value) return;
+  if (!formRef.value || isSending.value || isUnmounted) return;
 
   isSending.value = true;
   sendStatus.value = 'idle';
@@ -255,57 +304,90 @@ const sendEmail = async () => {
       { publicKey: EMAILJS_PUBLIC_KEY }
     );
 
-    formRef.value.reset();
+    if (isUnmounted) return;
+
+    formRef.value?.reset();
     showStatus('success', 'Message sent successfully!');
   } catch (error) {
+    if (isUnmounted) return;
+
     console.error('FAILED...', error);
     showStatus('error', 'Failed to send message. Try again.');
   } finally {
-    isSending.value = false;
+    if (!isUnmounted) isSending.value = false;
   }
 };
 
+// Initialize Animations
 onMounted(async () => {
   await nextTick();
 
-  observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          runAnimation();
-          observer.disconnect();
-        }
-      });
-    },
-    {
-      threshold: 0.2,
-      rootMargin: '0px 0px -80px 0px'
-    }
-  );
+  if (isUnmounted || !sectionRef.value) return;
 
-  if (sectionRef.value) {
+  if (
+    !('IntersectionObserver' in window) ||
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  ) return;
+
+  try {
+    observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting || hasAnimated || isUnmounted) return;
+
+          runAnimation();
+          observer?.disconnect();
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: '0px 0px -80px 0px'
+      }
+    );
+
     observer.observe(sectionRef.value);
+    sectionRef.value.classList.add('contact-ready');
+  } catch (error) {
+    handleAnimationError(error);
   }
 });
 
+// Cleanup
 onBeforeUnmount(() => {
-  if (observer) observer.disconnect();
-  if (statusTimeout) clearTimeout(statusTimeout);
+  isUnmounted = true;
+  cleanupAnimations();
+
+  if (statusTimeout) {
+    clearTimeout(statusTimeout);
+    statusTimeout = null;
+  }
 });
 </script>
 
-
 <style scoped>
-/* Entry animation */
-.heading-block,
-.contact-item,
-.form-panel {
-  opacity: 0;
-  transform: translateY(40px);
-  will-change: transform, opacity;
+/* Entry Animation */
+@media (prefers-reduced-motion: no-preference) {
+  .contact-ready:not(.animation-failed) :is(
+    .heading-block,
+    .contact-item,
+    .form-panel
+  ) {
+    opacity: 0;
+    will-change: transform, opacity;
+  }
 }
 
-/* Status transition */
+/* Restore Content if Animation Fails */
+.animation-failed :is(
+  .heading-block,
+  .contact-item,
+  .form-panel
+) {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Status Transition */
 .pop-enter-active,
 .pop-leave-active {
   transition: all 0.15s ease;
@@ -317,13 +399,13 @@ onBeforeUnmount(() => {
   transform: translateY(10px) scale(0.96);
 }
 
-/* Status container */
+/* Status Container */
 .status-box {
   isolation: isolate;
   min-height: 52px;
 }
 
-/* Icon wrapper */
+/* Icon Wrapper */
 .status-icon {
   width: 20px;
   height: 20px;
@@ -332,7 +414,7 @@ onBeforeUnmount(() => {
   justify-content: center;
 }
 
-/* SUCCESS SVG */
+/* Success SVG */
 .success-icon {
   width: 20px;
   height: 20px;
@@ -351,7 +433,7 @@ onBeforeUnmount(() => {
   }
 }
 
-/* ERROR ICON */
+/* Error Icon */
 .error-icon {
   width: 18px;
   height: 18px;
@@ -361,7 +443,7 @@ onBeforeUnmount(() => {
   font-weight: 700;
 }
 
-/* Animated border countdown */
+/* Animated Border Countdown */
 .progress-border {
   position: absolute;
   inset: 0;
@@ -388,10 +470,23 @@ onBeforeUnmount(() => {
   to { clip-path: inset(100% 100% 100% 0); }
 }
 
-/* Placeholder styling */
+/* Placeholder Styling */
 input::placeholder,
 textarea::placeholder {
   font-weight: 300;
   color: rgba(156, 163, 175, 0.7);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .pop-enter-active,
+  .pop-leave-active {
+    transition: none;
+  }
+
+  .success-icon,
+  .progress-border::before {
+    animation: none;
+  }
 }
 </style>
