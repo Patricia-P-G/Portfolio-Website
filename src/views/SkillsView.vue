@@ -5,6 +5,7 @@ import { animate, createTimeline, stagger } from 'animejs';
 import AnimatedBackground from '@/components/AnimatedBackground.vue';
 import SkillCard from '@/components/SkillCard.vue';
 import { useSkills } from '@/components/modules/useSkills';
+import { useHead } from '@unhead/vue';
 
 const { groupedSkills } = useSkills();
 const skillsRef = ref(null);
@@ -149,14 +150,52 @@ onBeforeUnmount(() => {
   isUnmounted = true;
   cleanupAnimations();
 });
+
+useHead({
+  title: 'Technical Skills | Patricia - Frontend Developer',
+
+  meta: [
+    {
+      name: 'description',
+      content: 'Explore my technical skills in frontend development, including HTML, CSS, JavaScript, TypeScript, Vue.js, Tailwind CSS, and modern web technologies.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    },
+    {
+      property: 'og:title',
+      content: 'Technical Skills | Patricia - Frontend Developer'
+    },
+    {
+      property: 'og:description',
+      content: 'Discover the technologies, tools, and frontend development skills I use to build modern, responsive, and accessible websites.'
+    },
+    {
+      property: 'og:url',
+      content: 'https://patricia-portfolio-website.web.app/skills'
+    },
+    {
+      property: 'og:site_name',
+      content: 'Patricia Portfolio'
+    }
+  ],
+
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://patricia-portfolio-website.web.app/skills'
+    }
+  ]
+})
+
 </script>
 
 <template>
   <div class="relative min-h-screen">
     <AnimatedBackground />
 
-    <main
-      ref="skillsRef"
+    <main ref="skillsRef"
       :class="{
         'skills-ready': shouldAnimate,
         'skills-animation-failed': animationFailed
@@ -176,25 +215,15 @@ onBeforeUnmount(() => {
         </header>
 
         <!-- Skill Categories -->
-        <section
-          v-for="category in groupedSkills"
-          :key="category.id"
-          class="skills-group mb-10"
-          :aria-labelledby="`skills-${category.id}`"
-        >
-          <h2
-            :id="`skills-${category.id}`"
-            class="skills-title mb-6 text-2xl font-semibold text-white"
-          >
+        <section v-for="category in groupedSkills" :key="category.id" class="skills-group mb-10"
+          :aria-labelledby="`skills-${category.id}`">
+          
+          <h2 :id="`skills-${category.id}`" class="skills-title mb-6 text-2xl font-semibold text-white">
             {{ category.title }}
           </h2>
 
           <div class="skills-grid grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5">
-            <div
-              v-for="skill in category.skills"
-              :key="skill.id"
-              class="skill-card-animate"
-            >
+            <div v-for="skill in category.skills" :key="skill.id" class="skill-card-animate">
               <SkillCard :skill="skill" />
             </div>
           </div>
