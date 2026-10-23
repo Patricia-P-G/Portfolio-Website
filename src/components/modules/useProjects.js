@@ -4,6 +4,43 @@ export const useProjects = () => {
   const projects = ref([
     {
       id: 1,
+      title: "Business Region Website",
+      description:
+        "A responsive business website redesigned to improve usability, accessibility and user experience.",
+      longDescription: `This project involved redesigning and developing the Business Region DE-DK website as part of my frontend development exam.
+
+The website connects businesses across Denmark and Germany, providing information about the organization, its network, partnerships and membership opportunities.
+
+The website includes:
+- Responsive layouts for desktop, tablet, and mobile
+- Interactive navigation and reusable Vue components
+- Search and sorting functionality for the business network
+- A multi-step membership form
+- Newsletter subscription interface
+- SEO improvements using structured data and metadata
+- Accessibility features, including semantic HTML and ARIA attributes
+
+My role focused on designing and implementing the frontend, creating reusable components, and improving the overall user experience.
+
+The website was also evaluated using Lighthouse to assess performance, accessibility, best practices and SEO.`
+,
+      image: new URL("../../assets/projects-home/business-region-website/business-region-hero-1.png", import.meta.url)
+        .href,
+      gallery: [
+        new URL("../../assets/projects-home/business-region-website/business-region-slider-1.png", import.meta.url).href,
+        new URL("../../assets/projects-home/business-region-website/business-region-slider-2.png", import.meta.url).href,
+        new URL("../../assets/projects-home/business-region-website/business-region-slider-3.png", import.meta.url).href,
+      ],
+      tags: ["Vue", "JavaScript", "HTML", "Tailwind","Vanilla CSS"],
+      category: "Web Development",
+      teamMembers: ['Patricia, Tetiana, Mihaela, Anetta'],
+      year: "2026",
+      role: "Developer",
+      liveUrl: "https://business-region-de-dk.web.app/",
+      githubUrl: "https://github.com/Patricia-P-G/Business-Region-Website"
+    },
+    {
+      id: 2,
       title: "Weather App",
       description:
         "A weather app that lets users select a city and view the current weather and a 5-day forecast.",
@@ -35,7 +72,7 @@ The project focuses on building a clean and intuitive interface while integratin
     },
 
     {
-      id: 2,
+      id: 3,
       title: "Resort Booking App",
       description:
         "A resort booking app where users can browse accommodations, explore amenities and view detailed room information.",
@@ -67,7 +104,7 @@ Users can easily navigate the platform and explore the resort in an intuitive an
       githubUrl: "https://github.com/Patricia-P-G/Proiect-Final-Resort",
     },
     {
-      id: 3,
+      id: 4,
       title: "The Brothers Lionheart App",
       description:
       "A storytelling website based on The Brothers Lionheart, combining visuals, interactivity and narrative.",
@@ -102,7 +139,7 @@ It emphasizes layout, interactivity, and visual storytelling to create a more en
       githubUrl: "https://github.com/andreialex232/The-Lionheart-Brothers",
     },
     {
-      id: 4,
+      id: 5,
       title: "Recipe Website",
       description: "A simple recipe website for exploring meals and cooking instructions.",
       longDescription: `This is my Recipe Website project, developed as part of my web development journey.
@@ -135,7 +172,7 @@ Users can easily browse recipes and follow instructions in a simple and engaging
     },
 
     {
-      id: 5,
+      id: 6,
       title: "E-commerce App",
       description: "React E-commerce app with cart, favorites, and theme switching.",
       longDescription: `This is my React E-commerce App project, developed as part of my web development course.
