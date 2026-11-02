@@ -4,26 +4,72 @@ export const useProjects = () => {
   const projects = ref([
     {
       id: 1,
+      title: "Purrify Music App",
+      description: "A music streaming app to discover songs, explore artists, create playlists and save favorites.",
+      longDescription: `Purrify is a music streaming web application developed using Vue 3, TypeScript and Tailwind CSS as part of my 3rd semester Advanced JavaScript Apps exam project in the Multimedia Design programme.
+
+The application focuses on creating a personalized music experience through an interactive interface, reusable components and Spotify API integration.
+
+The application features:
+- Music search for songs, artists and albums
+- Personalized music recommendations
+- Favorite songs and recently played tracks
+- Artist and playlist browsing
+- Interactive music player controls
+- Responsive layouts for desktop and mobile
+
+My technical contributions:
+- Developed the frontend using Vue 3, TypeScript and Tailwind CSS
+- Created reusable Vue components and composables to separate UI and application logic
+- Integrated the Spotify Web API using OAuth 2.0 with PKCE authentication
+- Implemented reactive music playback state using Vue's Composition API
+- Developed search functionality with dynamic result previews
+- Implemented favorites management and recently played functionality
+- Built responsive navigation and interactive UI components
+- Improved accessibility using semantic HTML, ARIA attributes and keyboard navigation.`,
+
+      image: new URL("../../assets/projects-home/purrify-app/purrify-app-hero-1.png", import.meta.url)
+        .href,
+      gallery: [
+        new URL("../../assets/projects-home/purrify-app/purrify-slide-1.png", import.meta.url).href,
+        new URL("../../assets/projects-home/purrify-app/purrify-slide-2.png", import.meta.url).href,
+        new URL("../../assets/projects-home/purrify-app/purrify-slide-3.png", import.meta.url).href,
+        new URL("../../assets/projects-home/purrify-app/purrify-slide-4.png", import.meta.url).href,
+        new URL("../../assets/projects-home/purrify-app/purrify-slide-5.png", import.meta.url).href,
+      ],
+      tags: ["Vue", "TypeScript", "Spotify API", "HTML", "Tailwind"],
+      category: "Web Development",
+      teamMembers: [],
+      year: "2026",
+      role: "Frontend Developer",
+      liveUrl: "https://purrify-app.appwrite.network/",
+      githubUrl: "https://github.com/Patricia-P-G/Purrify-App",
+    },
+    {
+      id: 2,
       title: "Business Region Website",
       description:
-        "A responsive business website redesigned to improve usability, accessibility and user experience.",
-      longDescription: `This project involved redesigning and developing the Business Region DE-DK website as part of my frontend development exam.
+        "A responsive business website connecting companies across Denmark and Germany.",
+      longDescription: `Business Region DE-DK is a business networking website redesigned and developed as part of my 2nd semester Multimedia Design exam.
 
-The website connects businesses across Denmark and Germany, providing information about the organization, its network, partnerships and membership opportunities.
+The website provides information about the organization, its business network, partnerships and membership opportunities.
 
-The website includes:
-- Responsive layouts for desktop, tablet, and mobile
+The website features:
+- Responsive layouts for desktop, tablet and mobile
+- Business network search and alphabetical sorting
 - Interactive navigation and reusable Vue components
-- Search and sorting functionality for the business network
-- A multi-step membership form
+- Multi-step membership form
 - Newsletter subscription interface
-- SEO improvements using structured data and metadata
-- Accessibility features, including semantic HTML and ARIA attributes
 
-My role focused on designing and implementing the frontend, creating reusable components, and improving the overall user experience.
+My technical contributions:
+- Developed the frontend using Vue 3, Vite and Tailwind CSS
+- Created reusable Vue components with props and event handling
+- Implemented reactive search, filtering and sorting functionality
+- Built interactive forms and navigation components
+- Added SEO metadata and Schema.org structured data
+- Improved accessibility using semantic HTML, ARIA attributes and keyboard navigation
+- Evaluated performance, accessibility and SEO using Lighthouse.`,
 
-The website was also evaluated using Lighthouse to assess performance, accessibility, best practices and SEO.`
-,
       image: new URL("../../assets/projects-home/business-region-website/business-region-hero-1.png", import.meta.url)
         .href,
       gallery: [
@@ -31,30 +77,78 @@ The website was also evaluated using Lighthouse to assess performance, accessibi
         new URL("../../assets/projects-home/business-region-website/business-region-slider-2.png", import.meta.url).href,
         new URL("../../assets/projects-home/business-region-website/business-region-slider-3.png", import.meta.url).href,
       ],
-      tags: ["Vue", "JavaScript", "HTML", "Tailwind","Vanilla CSS"],
+      tags: ["Vue", "JavaScript", "HTML", "Tailwind"],
       category: "Web Development",
-      teamMembers: ['Patricia, Tetiana, Mihaela, Anetta'],
+      teamMembers: ["Patricia", "Tetiana", "Mihaela", "Anetta"],
       year: "2026",
-      role: "Developer",
+      role: "Frontend Developer",
       liveUrl: "https://business-region-de-dk.web.app/",
-      githubUrl: "https://github.com/Patricia-P-G/Business-Region-Website"
+      githubUrl: "https://github.com/Patricia-P-G/Business-Region-Website",
     },
     {
-      id: 2,
+      id: 3,
+      title: "Nordic Bloom E-commerce",
+      description:
+        "A flower webshop where visitors can explore products, browse categories and read blog articles.",
+      longDescription: `Nordic Bloom is a flower webshop developed using WordPress, PHP, JavaScript, HTML and CSS as part of my 3rd semester CMS exam.
+
+The website allows visitors to explore flower products, browse categories and find inspiration through blog articles.
+
+The website features:
+- Flower categories and individual product pages
+- Blog articles with a comment section
+- Responsive navigation for desktop and mobile
+- Contact form with input validation
+- Dynamic content managed through WordPress
+
+My technical contributions:
+- Developed custom WordPress theme templates using PHP, HTML and CSS
+- Integrated Advanced Custom Fields (ACF) to retrieve and display dynamic content
+- Used WordPress functions to manage template content and navigation
+- Implemented client-side form validation using JavaScript and Parsley.js
+- Developed server-side form handling and validation using PHP
+- Improved accessibility with semantic HTML, ARIA attributes and skip links
+- Debugged responsive styling and cross-page layout issues.`,
+
+      image: new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-hero-1.png", import.meta.url)
+        .href,
+      gallery: [
+        new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-1.png", import.meta.url).href,
+        new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-2.png", import.meta.url).href,
+        new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-3.png", import.meta.url).href,
+      ],
+      tags: ["WordPress", "PHP", "ACF", "JavaScript"],
+      category: "Web Development",
+      teamMembers: ["Patricia", "Tetiana", "Iryna", "Olga"],
+      year: "2026",
+      role: "WordPress Developer",
+      liveUrl: "https://flowerswebshop.dk/",
+      githubUrl: "https://github.com/irynahutsalo/Exam3_Flower-web-shop/",
+    },
+
+    {
+      id: 4,
       title: "Weather App",
       description:
-        "A weather app that lets users select a city and view the current weather and a 5-day forecast.",
-      longDescription: `This is my Weather App project, developed as part of my web development course at IT School.
+        "A weather application displaying current conditions and a five-day forecast for selected cities.",
+      longDescription: `A weather application developed using JavaScript, HTML, CSS and Bootstrap as part of my web development course at IT School.
 
-The app allows users to:
-- Search for cities
-- View current weather conditions
-- Check a 5-day weather forecast
+The application integrates the OpenWeather API to retrieve and display weather information based on a user's city search.
 
-It uses an external API to fetch real-time data such as temperature, humidity, and wind conditions.
+The application features:
+- City search for retrieving location-specific weather data
+- Current temperature, humidity, wind speed and weather conditions
+- Five-day weather forecasts
+- Responsive interface for desktop and mobile devices
 
-The project focuses on building a clean and intuitive interface while integrating API data into a responsive layout.
-`,
+My technical contributions:
+- Integrated the OpenWeather API using JavaScript to retrieve weather data
+- Processed JSON responses and extracted relevant weather information
+- Dynamically updated the DOM to display weather conditions and forecasts
+- Implemented city-based searches to request data for different locations
+- Structured the interface using HTML, CSS and Bootstrap
+- Developed responsive layouts for different screen sizes.`,
+
       image: new URL("../../assets/projects-home/weather-app/it-school-weather-hero-1.png", import.meta.url)
         .href,
       gallery: [
@@ -66,29 +160,34 @@ The project focuses on building a clean and intuitive interface while integratin
       category: "Web Development",
       teamMembers: [],
       year: "2025",
-      role: "Developer",
+      role: "Frontend Developer",
       liveUrl: "https://it-school-js-weather-app.netlify.app/",
-      githubUrl: "https://github.com/Patricia-P-G/Proiect-Final-Resort"
+      githubUrl: "https://github.com/Patricia-P-G/Proiect-Final-Resort",
     },
 
     {
-      id: 3,
+      id: 5,
       title: "Resort Booking App",
       description:
-        "A resort booking app where users can browse accommodations, explore amenities and view detailed room information.",
-      longDescription: `This is my React Resort Booking App project, developed as part of my web development course.
+        "A responsive resort website where visitors can explore accommodations, amenities and room details.",
+      longDescription: `A resort website developed using React, JavaScript, HTML and CSS as part of my web development course.
 
-The app is a modern resort booking platform that allows users to:
-- Browse available accommodations
-- Explore resort amenities
-- View detailed room descriptions with images
+The project focuses on redesigning the online experience of The Racha resort, allowing visitors to explore accommodations and resort facilities.
 
-The project focuses on rebranding The Racha resort’s online experience with a clean and user-friendly interface.
+The website features:
+- Accommodation listings with images
+- Individual room details and descriptions
+- Resort amenities and facilities
+- Responsive navigation and page layouts
 
-It emphasizes reusable React components, structured page layout, and responsive design.
+My technical contributions:
+- Developed the frontend using React and JavaScript
+- Created reusable React components for accommodation listings and page sections
+- Used JSX to structure and render interface elements
+- Organized room information and images into reusable layouts
+- Implemented responsive styling using CSS
+- Maintained consistent component styling and navigation across pages.`,
 
-Users can easily navigate the platform and explore the resort in an intuitive and visually engaging way.
-`,
       image: new URL("../../assets/projects-home/resort/resort-hero-1.png", import.meta.url).href,
       gallery: [
         new URL("../../assets/projects-home/resort/resort-slider-1.png", import.meta.url).href,
@@ -99,28 +198,33 @@ Users can easily navigate the platform and explore the resort in an intuitive an
       category: "Web Development",
       teamMembers: [],
       year: "2025",
-      role: "Developer",
+      role: "Frontend Developer",
       liveUrl: "https://sunset-breeze-resort.netlify.app/",
       githubUrl: "https://github.com/Patricia-P-G/Proiect-Final-Resort",
     },
+
     {
-      id: 4,
+      id: 6,
       title: "The Brothers Lionheart App",
       description:
-      "A storytelling website based on The Brothers Lionheart, combining visuals, interactivity and narrative.",
-      longDescription: `This is my The Brothers Lionheart website project.
+        "An interactive storytelling website inspired by The Brothers Lionheart by Astrid Lindgren.",
+      longDescription: `An interactive storytelling website inspired by The Brothers Lionheart by Astrid Lindgren, developed using HTML, CSS and JavaScript.
 
-The project is a digital interpretation of The Brothers Lionheart by Astrid Lindgren, created to bring the story to life in a modern and interactive format.
+The project combines multimedia design and frontend development to present the story through an interactive digital experience.
 
-The website allows users to:
-- Explore the story through visual and interactive elements
-- Navigate content in an engaging and immersive way
-- Experience a blend of storytelling and web design
+The website features:
+- Story-focused visual layouts
+- Interactive storytelling elements
+- Navigation between different story sections
+- Responsive page layouts
 
-The project focuses on combining multimedia design, narrative structure, and technical implementation.
+My technical contributions:
+- Developed website sections using semantic HTML and CSS
+- Implemented interactive elements using JavaScript
+- Structured content to support navigation through the story
+- Applied responsive styling for different screen sizes
+- Combined visual design and frontend implementation to create an engaging reading experience.`,
 
-It emphasizes layout, interactivity, and visual storytelling to create a more engaging user experience.
-`,
       image: new URL(
         "../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-hero-1.png",
         import.meta.url,
@@ -134,29 +238,35 @@ It emphasizes layout, interactivity, and visual storytelling to create a more en
       category: "Web Development",
       teamMembers: ["Alex", "Helena", "Lando"],
       year: "2025",
-      role: "Developer",
+      role: "Frontend Developer",
       liveUrl: "https://andreialex232.github.io/The-Lionheart-Brothers/",
       githubUrl: "https://github.com/andreialex232/The-Lionheart-Brothers",
     },
+
     {
-      id: 5,
+      id: 7,
       title: "Recipe Website",
-      description: "A simple recipe website for exploring meals and cooking instructions.",
-      longDescription: `This is my Recipe Website project, developed as part of my web development journey.
+      description:
+        "A recipe website where visitors can explore meals, ingredients and cooking instructions.",
+      longDescription: `A recipe website designed and developed using HTML, CSS and JavaScript to make browsing recipes and following cooking instructions simple and intuitive.
 
-The website is a recipe platform that allows users to:
-- Explore different meals
-- View ingredient lists
-- Follow step-by-step cooking instructions
+The website presents recipes through organized layouts with ingredients and step-by-step instructions.
 
-The project focuses on presenting content in a clean, structured, and visually appealing way.
+The website features:
+- Recipe browsing
+- Ingredient lists
+- Step-by-step cooking instructions
+- Responsive page layouts
 
-It emphasizes usability, layout design, and creating an intuitive user experience.
+My technical contributions:
+- Designed and implemented the website's visual layout
+- Structured recipe content using semantic HTML
+- Used CSS to style recipe cards, content sections and navigation
+- Applied responsive styling for different screen sizes
+- Used JavaScript to support interactive website elements
+- Organized content to improve readability and navigation.`,
 
-Users can easily browse recipes and follow instructions in a simple and engaging interface.
-`,
       image: new URL("../../assets/projects-home/recipe-website/recipe-website-hero-1.png", import.meta.url).href,
-
       gallery: [
         new URL("../../assets/projects-home/recipe-website/recipe-slider-1.png", import.meta.url).href,
         new URL("../../assets/projects-home/recipe-website/recipe-slider-2.png", import.meta.url).href,
@@ -172,23 +282,31 @@ Users can easily browse recipes and follow instructions in a simple and engaging
     },
 
     {
-      id: 6,
+      id: 8,
       title: "E-commerce App",
-      description: "React E-commerce app with cart, favorites, and theme switching.",
-      longDescription: `This is my React E-commerce App project, developed as part of my web development course.
+      description:
+        "A React e-commerce application featuring product browsing, a shopping cart and favorites.",
+      longDescription: `An e-commerce application developed using React, JavaScript, HTML, CSS and Bootstrap as part of my web development course at IT School.
 
-The app is a simple online store that allows users to:
-- Explore online games
-- Add products to a shopping cart
-- Save items to favorites
+The application allows users to browse online games, manage a shopping cart and save products to their favorites.
 
-It uses an external API to fetch product data, including images, prices, and details.
+The application features:
+- Product listings with images, prices and details
+- Shopping cart functionality
+- Favorites management
+- Light and dark theme switching
+- Product data retrieved from an external API
 
-Users can also switch between light and dark themes for a personalized experience.
-`,
+My technical contributions:
+- Developed reusable React components for the application interface
+- Integrated an external API to retrieve and display product information
+- Rendered product listings dynamically using React
+- Implemented shopping cart and favorites functionality
+- Developed light and dark theme switching
+- Created responsive layouts using CSS and Bootstrap.`,
+
       image: new URL("../../assets/projects-home/e-commerce-app/it-school-products-hero-1.png", import.meta.url)
         .href,
-
       gallery: [
         new URL("../../assets/projects-home/e-commerce-app/it-school-products-slider-1.png", import.meta.url).href,
         new URL("../../assets/projects-home/e-commerce-app/it-school-products-slider-2.png", import.meta.url).href,
@@ -198,7 +316,7 @@ Users can also switch between light and dark themes for a personalized experienc
       category: "E-commerce",
       teamMembers: [],
       year: "2025",
-      role: "Developer",
+      role: "Frontend Developer",
       liveUrl: "https://it-school-products.netlify.app/",
       githubUrl: "https://github.com/Patricia-P-G/IT-School-Products",
     },
