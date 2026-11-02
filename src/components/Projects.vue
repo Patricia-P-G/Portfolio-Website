@@ -20,19 +20,19 @@
         <div class="flex gap-4 mt-6 md:mt-0 nav-buttons">
 
           <!-- Left Button -->
-          <button @click="swiperInstance?.slidePrev()"
+          <button type="button" @click="swiperInstance?.slidePrev()" aria-label="Previous project"
             class="w-12 h-12 rounded-full border border-white/10 bg-accent flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
+              stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
 
           <!-- Right Button -->
-          <button @click="swiperInstance?.slideNext()"
-            class="w-12 h-12 rounded-full border border-white/10 bg-accent flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer">
+          <button type="button" @click="swiperInstance?.slideNext()" aria-label="Next project" class="w-12 h-12 rounded-full border
+            border-white/10 bg-accent flex items-center justify-center text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
+              stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </button>

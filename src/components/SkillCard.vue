@@ -1,4 +1,3 @@
-
 <script setup>
 defineProps({
   skill: {

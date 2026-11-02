@@ -1,4 +1,3 @@
-
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import { animate, stagger } from 'animejs';

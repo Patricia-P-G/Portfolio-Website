@@ -40,9 +40,11 @@
                             improve both user experience and development workflows.
                         </p>
 
-                        <router-link to="/about"
-                            class="about-btn px-6 sm:px-8 py-3 sm:py-4 bg-white/5 border border-accent/50 text-white rounded-full font-medium hover:bg-neon-purple hover:border-neon-purple transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,0,245,0.4)] backdrop-blur-sm inline-flex items-center justify-center cursor-pointer">
-                            Read more
+                        <router-link to="/about" class="about-btn px-6 sm:px-8 py-3 sm:py-4 bg-white/5 border border-accent/50
+                         text-white rounded-full font-medium hover:bg-neon-purple hover:border-neon-purple transition-all
+                         duration-300 hover:shadow-[0_0_20px_rgba(255,0,245,0.4)] backdrop-blur-sm inline-flex items-center
+                         justify-center cursor-pointer">
+                            More about me
                         </router-link>
                     </div>
                 </div>
