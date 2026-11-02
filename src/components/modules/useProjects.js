@@ -162,7 +162,7 @@ My technical contributions:
       year: "2025",
       role: "Frontend Developer",
       liveUrl: "https://it-school-js-weather-app.netlify.app/",
-      githubUrl: "https://github.com/Patricia-P-G/Proiect-Final-Resort",
+      githubUrl: "https://github.com/Patricia-P-G/IT-School-Weather-App",
     },
 
     {

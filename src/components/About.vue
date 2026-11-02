@@ -8,7 +8,7 @@
                     <div class="about-image w-full md:w-1/3 flex justify-center">
                         <div
                             class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-95 md:h-105 lg:w-100 lg:h-107.5 rounded-2xl overflow-hidden glass-panel border border-white/20 p-2 transition-transform duration-500 shadow-2xl">
-                            <img src="../assets/about-home/about-home-pic.jpg" class="w-full h-full rounded-2xl object-cover"
+                            <img src="../assets/about-home/about-home-pic.webp" class="w-full h-full rounded-2xl object-cover"
                                 alt="About Patricia" />
                         </div>
                     </div>
