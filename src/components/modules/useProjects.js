@@ -28,14 +28,13 @@ My technical contributions:
 - Built responsive navigation and interactive UI components
 - Improved accessibility using semantic HTML, ARIA attributes and keyboard navigation.`,
 
-      image: new URL("../../assets/projects-home/purrify-app/purrify-app-hero-1.webp", import.meta.url)
-        .href,
+      image: new URL("../../assets/projects-home/purrify-app/purrify-app-hero-1.webp", import.meta.url).href,
       gallery: [
-        new URL("../../assets/projects-home/purrify-app/purrify-slide-1.png", import.meta.url).href,
-        new URL("../../assets/projects-home/purrify-app/purrify-slide-2.png", import.meta.url).href,
-        new URL("../../assets/projects-home/purrify-app/purrify-slide-3.png", import.meta.url).href,
-        new URL("../../assets/projects-home/purrify-app/purrify-slide-4.png", import.meta.url).href,
-        new URL("../../assets/projects-home/purrify-app/purrify-slide-5.png", import.meta.url).href,
+        new URL("../../assets/projects-home/purrify-app/purrify-slide-1.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/purrify-app/purrify-slide-2.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/purrify-app/purrify-slide-3.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/purrify-app/purrify-slide-4.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/purrify-app/purrify-slide-5.webp", import.meta.url).href,
       ],
       tags: ["Vue", "TypeScript", "Spotify API", "HTML", "Tailwind"],
       category: "Web Development",
@@ -70,12 +69,11 @@ My technical contributions:
 - Improved accessibility using semantic HTML, ARIA attributes and keyboard navigation
 - Evaluated performance, accessibility and SEO using Lighthouse.`,
 
-      image: new URL("../../assets/projects-home/business-region-website/business-region-hero-1.webp", import.meta.url)
-        .href,
+      image: new URL("../../assets/projects-home/business-region-website/business-region-hero-1.webp", import.meta.url).href,
       gallery: [
-        new URL("../../assets/projects-home/business-region-website/business-region-slider-1.png", import.meta.url).href,
-        new URL("../../assets/projects-home/business-region-website/business-region-slider-2.png", import.meta.url).href,
-        new URL("../../assets/projects-home/business-region-website/business-region-slider-3.png", import.meta.url).href,
+        new URL("../../assets/projects-home/business-region-website/business-region-slider-1.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/business-region-website/business-region-slider-2.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/business-region-website/business-region-slider-3.webp", import.meta.url).href,
       ],
       tags: ["Vue", "JavaScript", "HTML", "Tailwind"],
       category: "Web Development",
@@ -110,10 +108,9 @@ My technical contributions:
 - Improved accessibility with semantic HTML, ARIA attributes and skip links
 - Debugged responsive styling and cross-page layout issues.`,
 
-      image: new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-hero-1.webp", import.meta.url)
-        .href,
+      image: new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-hero-1.webp", import.meta.url).href,
       gallery: [
-        new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-1.png", import.meta.url).href,
+        new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-1.webp", import.meta.url).href,
         new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-2.png", import.meta.url).href,
         new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-3.png", import.meta.url).href,
       ],
@@ -149,8 +146,7 @@ My technical contributions:
 - Structured the interface using HTML, CSS and Bootstrap
 - Developed responsive layouts for different screen sizes.`,
 
-      image: new URL("../../assets/projects-home/weather-app/it-school-weather-hero-1.png", import.meta.url)
-        .href,
+      image: new URL("../../assets/projects-home/weather-app/it-school-weather-hero-1.webp", import.meta.url).href,
       gallery: [
         new URL("../../assets/projects-home/weather-app/it-school-weather-slider-1.png", import.meta.url).href,
         new URL("../../assets/projects-home/weather-app/it-school-weather-slider-2.png", import.meta.url).href,
@@ -188,7 +184,7 @@ My technical contributions:
 - Implemented responsive styling using CSS
 - Maintained consistent component styling and navigation across pages.`,
 
-      image: new URL("../../assets/projects-home/resort/resort-hero-1.png", import.meta.url).href,
+      image: new URL("../../assets/projects-home/resort/resort-hero-1.webp", import.meta.url).href,
       gallery: [
         new URL("../../assets/projects-home/resort/resort-slider-1.png", import.meta.url).href,
         new URL("../../assets/projects-home/resort/resort-slider-2.png", import.meta.url).href,
@@ -225,10 +221,7 @@ My technical contributions:
 - Applied responsive styling for different screen sizes
 - Combined visual design and frontend implementation to create an engaging reading experience.`,
 
-      image: new URL(
-        "../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-hero-1.png",
-        import.meta.url,
-      ).href,
+      image: new URL("../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-hero-1.webp", import.meta.url,).href,
       gallery: [
         new URL("../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-slider-1.png", import.meta.url).href,
         new URL("../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-slider-2.png", import.meta.url).href,
@@ -305,8 +298,7 @@ My technical contributions:
 - Developed light and dark theme switching
 - Created responsive layouts using CSS and Bootstrap.`,
 
-      image: new URL("../../assets/projects-home/e-commerce-app/it-school-products-hero-1.png", import.meta.url)
-        .href,
+      image: new URL("../../assets/projects-home/e-commerce-app/it-school-products-hero-1.png", import.meta.url).href,
       gallery: [
         new URL("../../assets/projects-home/e-commerce-app/it-school-products-slider-1.png", import.meta.url).href,
         new URL("../../assets/projects-home/e-commerce-app/it-school-products-slider-2.png", import.meta.url).href,
