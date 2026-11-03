@@ -186,9 +186,9 @@ My technical contributions:
 
       image: new URL("../../assets/projects-home/resort/resort-hero-1.webp", import.meta.url).href,
       gallery: [
-        new URL("../../assets/projects-home/resort/resort-slider-1.png", import.meta.url).href,
-        new URL("../../assets/projects-home/resort/resort-slider-2.png", import.meta.url).href,
-        new URL("../../assets/projects-home/resort/resort-slider-3.png", import.meta.url).href,
+        new URL("../../assets/projects-home/resort/resort-slider-1.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/resort/resort-slider-2.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/resort/resort-slider-3.webp", import.meta.url).href,
       ],
       tags: ["React", "JavaScript", "CSS", "HTML"],
       category: "Web Development",
@@ -223,9 +223,9 @@ My technical contributions:
 
       image: new URL("../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-hero-1.webp", import.meta.url,).href,
       gallery: [
-        new URL("../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-slider-1.png", import.meta.url).href,
-        new URL("../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-slider-2.png", import.meta.url).href,
-        new URL("../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-slider-3.png", import.meta.url).href,
+        new URL("../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-slider-1.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-slider-2.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/the-brothers-lionheart/the-brothers-lionheart-slider-3.webp", import.meta.url).href,
       ],
       tags: ["HTML", "CSS", "JavaScript"],
       category: "Web Development",
@@ -261,9 +261,9 @@ My technical contributions:
 
       image: new URL("../../assets/projects-home/recipe-website/recipe-website-hero-1.webp", import.meta.url).href,
       gallery: [
-        new URL("../../assets/projects-home/recipe-website/recipe-slider-1.png", import.meta.url).href,
-        new URL("../../assets/projects-home/recipe-website/recipe-slider-2.png", import.meta.url).href,
-        new URL("../../assets/projects-home/recipe-website/recipe-slider-3.png", import.meta.url).href,
+        new URL("../../assets/projects-home/recipe-website/recipe-slider-1.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/recipe-website/recipe-slider-2.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/recipe-website/recipe-slider-3.webp", import.meta.url).href,
       ],
       tags: ["HTML", "CSS", "JavaScript"],
       category: "Design / Web Development",

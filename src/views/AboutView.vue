@@ -42,7 +42,7 @@
           <div class="order-1 hidden justify-center md:order-2 lg:flex lg:justify-end">
             <div class="top-image glass-panel relative mt-4 h-64 w-64 overflow-hidden rounded-2xl border border-white/20 p-2 shadow-2xl transition-transform duration-500 sm:h-72 sm:w-72 md:mt-0 md:h-80 md:w-[320px]">
               <div class="h-full w-full overflow-hidden rounded-xl bg-gray-900">
-                <img src="../assets/hero-home/hero-photo copy.jpg" alt="Portrait of Patricia, frontend development student"
+                <img src="../assets/hero-home/hero-photo copy.webp" alt="Portrait of Patricia, frontend development student"
                   class="h-full w-full object-cover"
                 />
               </div>
