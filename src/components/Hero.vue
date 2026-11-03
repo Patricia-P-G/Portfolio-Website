@@ -96,17 +96,16 @@ onMounted(() => {
       </div>
 
       <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start flex-wrap gap-5">
-        <button
-          class="hero-btn px-6 sm:px-8 py-3 sm:py-4 bg-white/5 border border-accent/50 text-white rounded-full font-medium hover:bg-neon-purple hover:border-neon-purple transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,0,245,0.4)] backdrop-blur-sm group flex items-center cursor-pointer">
-          <router-link to="/projects">My work</router-link>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 ml-2">
+        <router-link to="/projects" class="hero-btn px-6 sm:px-8 py-3 sm:py-4 bg-white/5 border border-accent/50 text-white rounded-full font-medium hover:bg-neon-purple hover:border-neon-purple transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,0,245,0.4)] backdrop-blur-sm group flex items-center cursor-pointer">
+          My work
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 ml-2" aria-hidden="true">
             <path
               fill-rule="evenodd"
               d="M15.75 2.25H21a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-1.5 0V4.81L8.03 17.03a.75.75 0 0 1-1.06-1.06L19.19 3.75h-3.44a.75.75 0 0 1 0-1.5Zm-10.5 4.5a1.5 1.5 0 0 0-1.5 1.5v10.5a1.5 1.5 0 0 0 1.5 1.5h10.5a1.5 1.5 0 0 0 1.5-1.5V10.5a.75.75 0 0 1 1.5 0v8.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V8.25a3 3 0 0 1 3-3h8.25a.75.75 0 0 1 0 1.5H5.25Z"
               clip-rule="evenodd"
             />
           </svg>
-        </button>
+        </router-link>
 
         <div class="flex gap-4 sm:gap-5 flex-wrap justify-center">
           <a
