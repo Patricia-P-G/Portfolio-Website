@@ -28,7 +28,7 @@ My technical contributions:
 - Built responsive navigation and interactive UI components
 - Improved accessibility using semantic HTML, ARIA attributes and keyboard navigation.`,
 
-      image: new URL("../../assets/projects-home/purrify-app/purrify-app-hero-1.png", import.meta.url)
+      image: new URL("../../assets/projects-home/purrify-app/purrify-app-hero-1.webp", import.meta.url)
         .href,
       gallery: [
         new URL("../../assets/projects-home/purrify-app/purrify-slide-1.png", import.meta.url).href,
@@ -70,7 +70,7 @@ My technical contributions:
 - Improved accessibility using semantic HTML, ARIA attributes and keyboard navigation
 - Evaluated performance, accessibility and SEO using Lighthouse.`,
 
-      image: new URL("../../assets/projects-home/business-region-website/business-region-hero-1.png", import.meta.url)
+      image: new URL("../../assets/projects-home/business-region-website/business-region-hero-1.webp", import.meta.url)
         .href,
       gallery: [
         new URL("../../assets/projects-home/business-region-website/business-region-slider-1.png", import.meta.url).href,
@@ -110,7 +110,7 @@ My technical contributions:
 - Improved accessibility with semantic HTML, ARIA attributes and skip links
 - Debugged responsive styling and cross-page layout issues.`,
 
-      image: new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-hero-1.png", import.meta.url)
+      image: new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-hero-1.webp", import.meta.url)
         .href,
       gallery: [
         new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-1.png", import.meta.url).href,
