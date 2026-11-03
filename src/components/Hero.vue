@@ -86,7 +86,7 @@ onMounted(() => {
             class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-100 md:h-100 rounded-2xl overflow-hidden glass-panel border floating-img border-white/20 p-2 transition-transform duration-500 shadow-2xl">
             <div class="w-full h-full rounded-xl overflow-hidden bg-gray-900 relative">
               <img
-                src="../assets/hero-home/hero-photo copy.jpg"
+                src="../assets/hero-home/hero-photo copy.webp"
                 alt="Patricia's portrait"
                 class="w-full h-full object-cover opacity-100 hover:opacity-100 transition-opacity duration-300"
               />

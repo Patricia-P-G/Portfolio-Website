@@ -111,8 +111,8 @@ My technical contributions:
       image: new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-hero-1.webp", import.meta.url).href,
       gallery: [
         new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-1.webp", import.meta.url).href,
-        new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-2.png", import.meta.url).href,
-        new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-3.png", import.meta.url).href,
+        new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-2.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/nordic-bloom-e-commerce/nordic-bloom-slide-3.webp", import.meta.url).href,
       ],
       tags: ["WordPress", "PHP", "ACF", "JavaScript"],
       category: "Web Development",
@@ -148,9 +148,9 @@ My technical contributions:
 
       image: new URL("../../assets/projects-home/weather-app/it-school-weather-hero-1.webp", import.meta.url).href,
       gallery: [
-        new URL("../../assets/projects-home/weather-app/it-school-weather-slider-1.png", import.meta.url).href,
-        new URL("../../assets/projects-home/weather-app/it-school-weather-slider-2.png", import.meta.url).href,
-        new URL("../../assets/projects-home/weather-app/it-school-weather-slider-3.png", import.meta.url).href,
+        new URL("../../assets/projects-home/weather-app/it-school-weather-slider-1.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/weather-app/it-school-weather-slider-2.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/weather-app/it-school-weather-slider-3.webp", import.meta.url).href,
       ],
       tags: ["JavaScript", "API", "HTML", "CSS", "Bootstrap"],
       category: "Web Development",
@@ -259,7 +259,7 @@ My technical contributions:
 - Used JavaScript to support interactive website elements
 - Organized content to improve readability and navigation.`,
 
-      image: new URL("../../assets/projects-home/recipe-website/recipe-website-hero-1.png", import.meta.url).href,
+      image: new URL("../../assets/projects-home/recipe-website/recipe-website-hero-1.webp", import.meta.url).href,
       gallery: [
         new URL("../../assets/projects-home/recipe-website/recipe-slider-1.png", import.meta.url).href,
         new URL("../../assets/projects-home/recipe-website/recipe-slider-2.png", import.meta.url).href,
@@ -298,11 +298,11 @@ My technical contributions:
 - Developed light and dark theme switching
 - Created responsive layouts using CSS and Bootstrap.`,
 
-      image: new URL("../../assets/projects-home/e-commerce-app/it-school-products-hero-1.png", import.meta.url).href,
+      image: new URL("../../assets/projects-home/e-commerce-app/it-school-products-hero-1.webp", import.meta.url).href,
       gallery: [
-        new URL("../../assets/projects-home/e-commerce-app/it-school-products-slider-1.png", import.meta.url).href,
-        new URL("../../assets/projects-home/e-commerce-app/it-school-products-slider-2.png", import.meta.url).href,
-        new URL("../../assets/projects-home/e-commerce-app/it-school-products-slider-3.png", import.meta.url).href,
+        new URL("../../assets/projects-home/e-commerce-app/it-school-products-slider-1.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/e-commerce-app/it-school-products-slider-2.webp", import.meta.url).href,
+        new URL("../../assets/projects-home/e-commerce-app/it-school-products-slider-3.webp", import.meta.url).href,
       ],
       tags: ["React", "JavaScript", "HTML", "CSS", "Bootstrap"],
       category: "E-commerce",
