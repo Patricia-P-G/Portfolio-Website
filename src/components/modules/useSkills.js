@@ -57,41 +57,64 @@ const skills = [
     category: 'frontend'
   },
 
-  // Backend & APIs
-  {
-    id: 9,
-    title: 'API Integration',
-    icon: new URL('../../assets/skills-home/api-icon.svg', import.meta.url).href,
-    iconClass: 'w-17 h-17',
-    category: 'backend'
-  },
-
+  
   // Development Tools
   {
-    id: 10,
+    id: 9,
     title: 'Git',
     icon: new URL('../../assets/skills-home/git-icon.svg', import.meta.url).href,
     iconClass: 'w-16 h-16',
     category: 'tools'
   },
   {
-    id: 11,
+    id: 10,
     title: 'GitHub',
     icon: new URL('../../assets/skills-home/github-icon.svg', import.meta.url).href,
     iconClass: 'w-15 h-15',
     category: 'tools'
   },
+  {
+    id: 11,
+    title: 'ChatGPT',
+    icon: new URL('../../assets/skills-home/chatgpt-icon.svg', import.meta.url).href,
+    iconClass: 'w-14 h-14',
+    category: 'tools'
+  },
+  {
+    id: 12,
+    title: 'Claude',
+    icon: new URL('../../assets/skills-home/claude-ai-icon.svg', import.meta.url).href,
+    iconClass: 'w-14 h-14',
+    category: 'tools'
+  },
+   {
+    id: 13,
+    title: 'Copilot',
+    icon: new URL('../../assets/skills-home/copilot-icon.svg', import.meta.url).href,
+    iconClass: 'w-14 h-14',
+    category: 'tools'
+  },
+
+  // Backend & APIs
+  {
+    id: 14,
+    title: 'API Integration',
+    icon: new URL('../../assets/skills-home/api-icon.svg', import.meta.url).href,
+    iconClass: 'w-17 h-17',
+    category: 'backend'
+  },
+
 
   // Database
   {
-    id: 12,
+    id: 15,
     title: 'Firebase',
     icon: new URL('../../assets/skills-home/google-firebase-icon.svg', import.meta.url).href,
     iconClass: 'w-14 h-14',
     category: 'database'
   },
   {
-    id: 13,
+    id: 16,
     title: 'Appwrite',
     icon: new URL('../../assets/skills-home/appwrite-icon.svg', import.meta.url).href,
     iconClass: 'w-14 h-14',
@@ -100,35 +123,35 @@ const skills = [
 
   // Design
   {
-    id: 14,
+    id: 17,
     title: 'Figma',
     icon: new URL('../../assets/skills-home/figma-icon.svg', import.meta.url).href,
     iconClass: 'w-13 h-13',
     category: 'design'
   },
    {
-    id: 15,
+    id: 18,
     title: 'Canva',
     icon: new URL('../../assets/skills-home/canva-icon.svg', import.meta.url).href,
     iconClass: 'w-14 h-14',
     category: 'design'
   },
   {
-    id: 16,
+    id: 19,
     title: 'Photoshop',
     icon: new URL('../../assets/skills-home/adobe-photoshop-icon.svg', import.meta.url).href,
     iconClass: 'w-14 h-14',
     category: 'design'
   },
   {
-    id: 17,
+    id: 20,
     title: 'Illustrator',
     icon: new URL('../../assets/skills-home/adobe-illustrator-icon.svg', import.meta.url).href,
     iconClass: 'w-14 h-14',
     category: 'design'
   },
   {
-    id: 18,
+    id: 21,
     title: 'InDesign',
     icon: new URL('../../assets/skills-home/indesign-icon.svg', import.meta.url).href,
     iconClass: 'w-14 h-14',
@@ -138,8 +161,8 @@ const skills = [
 
 const categories = [
   { id: 'frontend', title: 'Frontend' },
-  { id: 'backend', title: 'Backend & APIs' },
   { id: 'tools', title: 'Development Tools' },
+  { id: 'backend', title: 'Backend & APIs' },
   { id: 'database', title: 'Database' },
   { id: 'design', title: 'Design' }
 ];
@@ -156,4 +179,3 @@ export const useSkills = () => {
 
   return { skills, baseSkills, extraSkills, groupedSkills };
 };
-
