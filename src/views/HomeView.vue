@@ -9,7 +9,7 @@ import Contact from '@/components/Contact.vue';
 import { useHead } from '@unhead/vue';
 
 // SEO
-const pageTitle = 'Patricia Gundelfingen | Frontend Developer';
+const pageTitle = 'Patricia P. Gundelfingen | Frontend Developer';
 const pageUrl = 'https://patricia-portfolio-website.web.app/';
 const pageDescription = 'Portfolio of Patricia Gundelfingen, a Multimedia Design student and frontend developer building responsive, accessible web applications with Vue.js, TypeScript and React.';
 
