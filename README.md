@@ -1,4 +1,4 @@
-## Patricia P. Gundelfingen – Portfolio Website
+# Patricia P. Gundelfingen – Portfolio Website
 
 I'm a Multimedia Design student at SEA – Syddansk Erhvervsakademi, focused on frontend development and UX/UI. This website presents my projects, skills and background, and lets visitors download my CV or get in touch directly.
 
