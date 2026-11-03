@@ -1,14 +1,11 @@
-# Patricia P. Gundelfingen – Portfolio Website
-
-Personal portfolio showcasing my frontend development and UI/UX projects. Built with Vue 3, Vite and Tailwind CSS.
-
-**Live Website:** [View Portfolio](https://patricia-portfolio-website.web.app/)
-**GitHub Repository:** [View Source Code](https://github.com/Patricia-P-G/Portfolio-Website)
----
-
-## About
+## Patricia P. Gundelfingen – Portfolio Website
 
 I'm a Multimedia Design student at SEA – Syddansk Erhvervsakademi, focused on frontend development and UX/UI. This website presents my projects, skills and background, and lets visitors download my CV or get in touch directly.
+
+
+Live Website: https://patricia-portfolio-website.web.app/
+
+GitHub Repository: https://github.com/Patricia-P-G/Portfolio-Website
 
 ## Features
 
