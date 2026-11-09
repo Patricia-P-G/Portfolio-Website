@@ -72,6 +72,7 @@
                                 Contact
                             </router-link>
 
+                            <!-- Resume Dropdown -->
                             <div class="relative" ref="dropdownRef">
                                 <button
                                     class="relative flex items-center gap-2 rounded-4xl border border-accent px-4 py-2 text-m text-accent transition-all duration-300 hover:bg-accent hover:text-white hover:shadow-[0_0_15px_rgba(255,0,245,0.4)] cursor-pointer"
@@ -89,14 +90,28 @@
                                         class="absolute right-0 top-full mt-3 w-48 overflow-hidden rounded-xl border border-white/10 bg-[#1a1a1a] shadow-2xl">
                                         <ul class="py-2">
                                             <li>
-                                                <a href="https://www.youtube.com/watch?v=UREXh22Sr-w" target="_blank" rel="noopener noreferrer"
+                                                <a href="https://www.youtube.com/watch?v=UREXh22Sr-w"
+                                                    target="_blank" rel="noopener noreferrer"
                                                     class="flex items-center px-4 py-3 text-sm text-gray-300 transition-colors hover:bg-accent hover:text-white">
                                                     Video CV
                                                 </a>
                                             </li>
-                                            <li><a :href="resumePdf" download="CV-PDF-Patricia-Puienaru-Gundelfingen.pdf"
-                                                    class="flex items-center px-4 py-3 text-sm text-gray-300 transition-colors hover:bg-accent hover:text-white">
-                                                    CV PDF (Download)
+
+                                            <li>
+                                                <a :href="resumePoland"
+                                                    download="CV-PL-Patricia-P-Gundelfingen.pdf"
+                                                    class="flex items-center px-4 py-3 text-sm text-gray-300 transition-colors hover:bg-accent hover:text-white"
+                                                    @click="closeDropdown">
+                                                    CV Poland (Download)
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a :href="resumeDenmark"
+                                                    download="CV-DK-Patricia-P-Gundelfingen.pdf"
+                                                    class="flex items-center px-4 py-3 text-sm text-gray-300 transition-colors hover:bg-accent hover:text-white"
+                                                    @click="closeDropdown">
+                                                    CV Denmark (Download)
                                                 </a>
                                             </li>
                                         </ul>
@@ -111,7 +126,8 @@
 
         <!-- Mobile Resume Popup -->
         <transition name="resume-popup">
-            <div v-if="isResumePopupOpen" class="fixed inset-0 z-90 flex items-center justify-center bg-black/70 px-6"
+            <div v-if="isResumePopupOpen"
+                class="fixed inset-0 z-90 flex items-center justify-center bg-black/70 px-6"
                 @click.self="closeResumePopup">
                 <div
                     class="resume-popup-box w-full max-w-md rounded-2xl border border-white/10 bg-[#1a1a1a] p-8 text-center shadow-2xl">
@@ -123,17 +139,26 @@
                         Choose one of the options below.
                     </p>
 
-                    <div class="flex flex-row gap-3">
-                        <a href="https://www.youtube.com/watch?v=UREXh22Sr-w" target="_blank" rel="noopener noreferrer"
+                    <div class="flex flex-col gap-3">
+                        <a href="https://www.youtube.com/watch?v=UREXh22Sr-w"
+                            target="_blank" rel="noopener noreferrer"
                             class="w-full rounded-xl border border-accent px-4 py-3 font-medium text-white transition-all duration-300 hover:bg-accent hover:shadow-[0_0_15px_rgba(255,0,245,0.35)]"
                             @click="closeResumePopup">
                             Video CV
                         </a>
 
-                        <a :href="resumePdf" download="CV-PDF-Patricia-Puienaru-Gundelfingen.pdf"
+                        <a :href="resumePoland"
+                            download="CV-PL-Patricia-P-Gundelfingen.pdf"
                             class="w-full rounded-xl border border-accent px-4 py-3 font-medium text-white transition-all duration-300 hover:bg-accent hover:shadow-[0_0_15px_rgba(255,0,245,0.35)]"
                             @click="closeResumePopup">
-                            CV PDF
+                            CV Poland (Download)
+                        </a>
+
+                        <a :href="resumeDenmark"
+                            download="CV-DK-Patricia-P-Gundelfingen.pdf"
+                            class="w-full rounded-xl border border-accent px-4 py-3 font-medium text-white transition-all duration-300 hover:bg-accent hover:shadow-[0_0_15px_rgba(255,0,245,0.35)]"
+                            @click="closeResumePopup">
+                            CV Denmark (Download)
                         </a>
                     </div>
 
@@ -142,7 +167,6 @@
                         type="button">
                         Cancel
                     </button>
-
                 </div>
             </div>
         </transition>
@@ -160,7 +184,9 @@ const isDropdownOpen = ref(false);
 const isResumePopupOpen = ref(false);
 const dropdownRef = ref(null);
 
-const resumePdf = '/navbar-resume/CV PDF Patricia Puienaru Gundelfingen.pdf';
+// Resume PDF files
+const resumePoland = '/navbar-resume/CV-PL-Patricia-P-Gundelfingen.pdf';
+const resumeDenmark = '/navbar-resume/CV-DK-Patricia-P-Gundelfingen.pdf';
 
 const toggleMobileMenu = () => {
     isOpen.value = !isOpen.value;
@@ -172,6 +198,10 @@ const closeMobileMenu = () => {
 
 const toggleDropdown = () => {
     isDropdownOpen.value = !isDropdownOpen.value;
+};
+
+const closeDropdown = () => {
+    isDropdownOpen.value = false;
 };
 
 const openResumePopup = () => {
@@ -217,8 +247,6 @@ const menu = [
     { name: 'contact', label: 'Contact', href: '/contact' },
 ];
 </script>
-
-
 
 <style scoped>
 .mobile-menu-enter-active,
